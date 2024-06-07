@@ -33,7 +33,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <input type="text" name="telephone" required><br><br>
         <input type="submit" value="S'inscrire"><br><br>
         <div style="color:white;">Vous avez déjà un compte? <br> Cliquez ici pour vous <a href="login_livreur.php">connecter</a></div><br>
-        
     </form>
 </body>
 </html>
