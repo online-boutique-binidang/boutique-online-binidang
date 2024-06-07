@@ -1,0 +1,101 @@
+body {
+    background-image: url("../images/issets/image-floutée.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.img {
+    position: absolute;
+    right: 0%;
+}
+
+a {
+    text-decoration: none;
+    color: aliceblue;
+}
+.img:hover{
+    width: 55%;
+}
+
+ul li {
+    display: inline-block;
+    color: aliceblue;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    transition: font-size 0.3s ease;
+    text-shadow:  0px 5px 6px black;
+    margin-top: -1%;
+}
+
+ul li a {}
+
+ul li a:hover {
+   
+    font-size: 90%;
+    font-weight: bold;
+}
+ul li h2:hover{
+    font-size: 80%;
+}
+
+div h1 {
+    color: black;
+    font-size: 350%;
+}
+
+.well {
+    color: white;
+    margin-left: 10%;
+    margin-top: 10%;
+    font-weight: bold;
+}
+button{
+    float: left;
+    color: darkgreen;
+    font-size: 120%;
+    border-radius: 10px 10px 10px 10px ;
+    box-shadow: 0 0 15px 5px;
+    font-weight: bold;
+}
+div div{
+    text-shadow:  0px 5px 6px black;
+}
+
+/* Style pour le menu déroulant */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 200px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    border-radius:10px;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+    font-size:15px;
+    color:blue;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    color: rgb(1, 136, 255);
+    
+    font-weight: bold;
+}

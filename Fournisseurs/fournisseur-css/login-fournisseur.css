@@ -1,0 +1,60 @@
+ body {
+            background-color:rgba(0, 0, 0, 0.918);
+            margin: 0%;
+            overflow-y: scroll;
+            overflow-x: hidden;
+        }
+        form {
+            background-color: rgba(0, 0, 0, 0.089);
+            position: absolute;
+            height: 60%;
+            width: 50%;
+            border-radius: 20px 20px 20px 20px;
+            box-shadow: 1px 1px 4px;
+            border: solid white 2px;
+            margin-left: 25%;
+            margin-top: 5%;
+            padding: 25px;
+        }
+
+        form input {
+            
+            border: 1px solid grey;
+            width: 50%;
+            padding: 5px;
+            font-size: 120%;
+            border-radius: 10px 10px 10px 10px;
+            color: black;
+
+        }
+        input[type="submit"]{
+            box-shadow: 1px 1px 5px;
+            border: 1px solid rgb(153, 153, 155);
+            width: 50%;
+            padding: 5px;
+            font-size: 120%;
+            border-radius: 10px 10px 10px 10px;
+            background-color: rgba(0, 0, 0, 0.418);
+            color: rgba(255, 208, 0, 0.925);
+        }
+        h1{
+            color: yellow;
+        }
+        h2{
+            color:white;
+        }
+        label{
+            color: white;
+            margin: 10px;
+        }
+        input:hover {
+            background-color: rgba(251, 255, 0, 0.849);
+            color: black;
+        }
+        .meme{
+            color: white;
+        }
+        a{
+            color: rgb(0, 255, 21);
+            text-decoration: none;
+        }

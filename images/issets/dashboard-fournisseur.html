@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Super Marché Dang-Bini</title>
+    <style>
+        *,
+        *::before,
+        *::after {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        li {
+            list-style: none;
+        }
+
+        img,
+        ion-icon,
+        a,
+        button,
+        time,
+        span {
+            display: block;
+        }
+
+        button {
+            font: inherit;
+            background: none;
+            border: none;
+            text-align: left;
+            cursor: pointer;
+        }
+
+        input,
+        textarea {
+            display: block;
+            width: 100%;
+            background: none;
+            font: inherit;
+        }
+
+        ::selection {
+            background: var(--orange-yellow-crayola);
+            color: var(--smoky-black);
+        }
+
+        :focus {
+            outline-color: var(--orange-yellow-crayola);
+        }
+
+        html {
+            font-family: var(--ff-poppins);
+        }
+
+        body {
+            background: var(--smoky-black);
+        }
+
+        body {
+            background-image: url('main.jpg');
+           
+        }
+
+        .header {
+            background-color: rgba(0, 42, 255, 0.676);
+            position: fixed;
+            width: 100%;
+            height: 75px;
+            border-bottom: 2px solid rgba(255, 255, 255, 0.618);
+            box-shadow: 0 2px 5px rgb(0, 0, 0);
+        }
+
+        .header:active {
+            background-color: aqua;
+        }
+
+        .img {
+            position: absolute;
+            right: 0%;
+           
+
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .head {
+            display: inline-block;
+            font-family: 'Roboto', sans-serif;
+            font-weight: bold;
+            transition: font-size 0.3s ease;
+            color: rgb(255, 251, 251);
+            margin-top: -1%;
+           
+            
+        }
+
+        .head a {
+            color: rgb(255, 255, 255);
+            
+        }
+
+        .head a:hover {
+            color: rgb(255, 153, 0);
+            font-size: 105%;
+            background-color: rgb(255, 255, 255);
+            font-weight: bold;
+            padding: 2px;
+            border-radius: 10px;
+            transition-duration: 5s ease;
+            transition: 0.25s ease-in;
+            transition: 0.5s ease-in-out;
+        }
+
+        .st img {
+            background-color: rgb(255, 255, 255);
+            width: 110px;
+            height: 110px;
+
+            background: var(--eerie-black-2);
+            box-shadow: 0 1px 5px;
+            align-items: center;
+            justify-content: center;
+            transition-duration: 5s ease;
+            transition: 0.25s ease-in;
+            transition: 0.5s ease-in-out;
+            z-index: 1;
+            border-radius: 10px;
+
+
+        }
+
+
+        .st img:hover {
+            transition: var(--transition-2);
+            cursor: pointer;
+            border-radius: 10px;
+            justify-content: flex-start;
+            width: 100px;
+            height: 100px;
+        }
+
+        .st {
+            display: inline-block;
+            margin-left: 5%;
+        }
+
+        .st a {
+            color: black;
+        }
+
+        .st a button {
+            color: rgb(255, 255, 255);
+            background-color: rgba(30, 0, 255, 0.801);
+            padding: 3px;
+            font-size: 12px;
+            font-weight: bolder;
+            text-shadow: 2px 0px 10px rgb(27, 26, 26);
+            border-radius: 10px;
+        }
+
+        .st a button:hover {
+            transition: 14s ease-in;
+        }
+
+        .contener {
+            background-color: rgba(0, 0, 0, 0.021);
+            margin-left: 3%;
+            margin-right: 3%;
+            border-radius: 25px;
+            border: 1px solid rgb(255, 255, 255);
+            padding: 1%;
+            gap: 25px;
+        }
+
+        .foot {
+            display: inline-block;
+            margin-left: 15px;
+            color: aliceblue;
+        }
+
+        footer {
+            background: rgba(0, 0, 0, 0.815);
+            padding-bottom: 5%;
+        }
+
+        #compteur-panier {
+            position: absolute;
+            font-size: 30px;
+        }
+       
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <div class="div-header" >
+            <ul><br>
+                <li class="head" style="margin-left: 1%;">
+                    <h3>Je suis un fournisseur</h3>
+                </li>
+                <li class="head" style="margin-left: 30%;"><a href="index.html">Accueil</a></li>
+                <li class="head" style="margin-left: 1%;"><a href="">Catalogue des produits</a></li>
+                <li class="head" style="margin-left: 1%;"><a href="">Nouveau produit</a></li>
+                <li class="head" style="margin-left: 1%;"><a href="">Se déconnecter</a></li>
+                <li class="" style="margin-left: 1%;"><a href=""><img style="border-radius: 10px; float: right; margin-top: -15px; margin-right: 15px;" width="40px" src="notification.jpg" alt=""></a></li>
+                
+            </ul>
+            </ul>
+
+        </div>
+
+        
+    </header><hr>
+    <br><br><br><br><br><br>
+    <h2 style="text-align: center;">Mon Catalogue de produits</h2>
+    <!-- listes de produits -->
+    <main>
+        <fieldset>
+            <legend style="padding-left: 15px;">Commandez nos meilleurs fruits</legend>
+            <ul class="contener">
+                <li class="st"><a href="#">
+                        <img src="nourriture-saine-fruits-legumes.jpg" alt="Avocat">
+                        <br>Avocat
+                        <br>Prix: 300XAF
+                        <br><button onclick="ajouterAuPanier('Haricot', 300)">Mettre à jour</button></a>
+                </li>
+
+                <li class="st"><a href="#">
+                        <img width="200px" src="346903.jpg" alt="Fruit">
+                        <br>Fruit
+                        <br>Prix:1000XAF
+                        <br><button onclick="ajouterAuPanier('Fruit', 1000)">Mettre à jour</button></a>
+                </li>
+                <li class="st"><a href="#">
+                        <img width="200px" src="AA.jpg" alt="Sac riz">
+                        <br>Sac de riz
+                        <br>Prix:15.000XAF
+                        <br><button onclick="ajouterAuPanier('Sac de riz', 15000)">Mettre à jour</button></a>
+                </li>
+                <li class="st"><a href="#">
+                        <img width="200px" src="Capture d’écran du 2024-04-06 21-52-41.png" alt="Gateau d'anniversaire">
+                        <br>Gateau d'anniversaire
+                        <br>Prix:5.000XAF
+                        <br><button onclick="ajouterAuPanier('Gateau anniversaire', 5000)">Mettre à jour</button></a>
+                </li>
+                <li class="st"><a href="#">
+                        <img width="200px" src="Denrées-alimentaires-Sénégal.jpeg" alt="Lait Nido">
+                        <br>Lait Nido
+                        <br>Prix:7.500XAF
+                        <br> <button onclick="ajouterAuPanier('Lait Nido', 75000)">Mettre à jour</button></a>
+                </li>
+                <li class="st"><a href="#">
+                        <img width="200px" src="Denrées-alimentaires-Sénégal.jpeg" alt="Mayonnaise">
+                        <br>Mayonnaise
+                        <br>Prix:2.500XAF
+                        <br> <button onclick="ajouterAuPanier('Mayonnaise', 2500)">Mettre à jour</button></a>
+                </li>
+            </ul><br>
+        </fieldset>
+        <fieldset>
+            <legend style="padding-left: 15px;">Vous aimeriez peut étre</legend>
+            <ul class="contener">
+                <li class="st"><a href="#">
+                        <img src="nourriture-saine-fruits-legumes.jpg" alt="Avocat">
+                        <br>Avocat
+                        <br>Prix: 300XAF
+                        <br><button onclick="ajouterAuPanier('Haricot', 300)">Mettre à jour</button></a>
+                </li>
+
+                <li class="st"><a href="#">
+                        <img width="200px" src="346903.jpg" alt="Fruit">
+                        <br>Fruit
+                        <br>Prix:1000XAF
+                        <br><button onclick="ajouterAuPanier('Fruit', 1000)">Mettre à jour</button></a>
+                </li>
+                <li class="st"><a href="#">
+                        <img width="200px" src="AA.jpg" alt="Sac riz">
+                        <br>Sac de riz
+                        <br>Prix:15.000XAF
+                        <br><button onclick="ajouterAuPanier('Sac de riz', 15000)">Mettre à jour</button></a>
+                </li>
+                <li class="st"><a href="#">
+                        <img width="200px" src="Capture d’écran du 2024-04-06 21-52-41.png" alt="Gateau d'anniversaire">
+                        <br>Gateau d'anniversaire
+                        <br>Prix:5.000XAF
+                        <br><button onclick="ajouterAuPanier('Gateau anniversaire', 5000)">Mettre à jour</button></a>
+                </li>
+                <li class="st"><a href="#">
+                        <img width="200px" src="Denrées-alimentaires-Sénégal.jpeg" alt="Lait Nido">
+                        <br>Lait Nido
+                        <br>Prix:7.500XAF
+                        <br> <button onclick="ajouterAuPanier('Lait Nido', 75000)">Mettre à jour</button></a>
+                </li>
+                <li class="st"><a href="#">
+                        <img width="200px" src="Denrées-alimentaires-Sénégal.jpeg" alt="Mayonnaise">
+                        <br>Mayonnaise
+                        <br>Prix:2.500XAF
+                        <br> <button onclick="ajouterAuPanier('Mayonnaise', 2500)">Mettre à jour</button></a>
+                </li>
+            </ul><br>
+        </fieldset>
+        <fieldset>
+            <legend>Vous aimeriez Découvrez nos variétés de produits</legend>
+            <ul class="contener">
+                <li class="st"><a href="#">
+                        <img src="nourriture-saine-fruits-legumes.jpg" alt="Avocat">
+                        <br>Avocat
+                        <br>Prix: 300XAF
+                        <br><button onclick="ajouterAuPanier('Haricot', 300)">Mettre à jour</button></a>
+                </li>
+
+                <li class="st"><a href="#">
+                        <img width="200px" src="346903.jpg" alt="Fruit">
+                        <br>Fruit
+                        <br>Prix:1000XAF
+                        <br><button onclick="ajouterAuPanier('Fruit', 1000)">Mettre à jour</button></a>
+                </li>
+                <li class="st"><a href="#">
+                        <img width="200px" src="AA.jpg" alt="Sac riz">
+                        <br>Sac de riz
+                        <br>Prix:15.000XAF
+                        <br><button onclick="ajouterAuPanier('Sac de riz', 15000)">Mettre à jour</button></a>
+                </li>
+                <li class="st"><a href="#">
+                        <img width="200px" src="Capture d’écran du 2024-04-06 21-52-41.png" alt="Gateau d'anniversaire">
+                        <br>Gateau d'anniversaire
+                        <br>Prix:5.000XAF
+                        <br><button onclick="ajouterAuPanier('Gateau anniversaire', 5000)">Mettre à jour</button></a>
+                </li>
+                <li class="st"><a href="#">
+                        <img width="200px" src="Denrées-alimentaires-Sénégal.jpeg" alt="Lait Nido">
+                        <br>Lait Nido
+                        <br>Prix:7.500XAF
+                        <br> <button onclick="ajouterAuPanier('Lait Nido', 75000)">Mettre à jour</button></a>
+                </li>
+                <li class="st"><a href="#">
+                        <img width="200px" src="Denrées-alimentaires-Sénégal.jpeg" alt="Mayonnaise">
+                        <br>Mayonnaise
+                        <br>Prix:2.500XAF
+                        <br> <button onclick="ajouterAuPanier('Mayonnaise', 2500)">Mettre à jour</button></a>
+                </li>
+            </ul><br>
+        </fieldset>
+    </main><br><br><br><br><br><br>
+    <!-- Autres listes de produits -->
+
+
+    <footer>
+        <ul class="footer"><br><br><br>
+            <li class="foot">
+                <h2 style="color: rgb(255, 255, 255);">Marché Dang-Bini</h2>Nous travaillons avec la <br> passion de
+                relever des défis pour vous offrir <br> la
+                possibilité de mieux manger tout en <br> dépensant moins.
+            </li>
+            <li class="foot">
+                <h2 style="color: rgb(255, 255, 255);">Marché Dang-Bini</h2>Nous travaillons avec la <br> passion de
+                relever des défis pour vous offrir <br> la
+                possibilité de mieux manger tout en <br> dépensant moins.
+            </li>
+            <li class="foot">
+                <h2 style="color: rgb(255, 255, 255);">Retouvez votre Supermarché</h2> Retrouvez nous sur nos réseaux
+                sociaux <br> <br> <br> <br>
+            </li>
+
+            <li class="foot">
+                <h2 style="color: rgb(255, 255, 255);">Retouvez votre Supermarché</h2> Retrouvez nous sur nos réseaux
+                sociaux <br> <br> <br> <br>
+            </li>
+        </ul>
+    </footer>
+
+    <script>
+        let compteurPanier = 0;
+        let panier = [];
+
+        function ajouterAuPanier(nomProduit, prixProduit) {
+            compteurPanier++;
+            document.getElementById('compteur-panier').innerText = compteurPanier;
+            panier.push({ nom: nomProduit, prix: prixProduit });
+            localStorage.setItem('panier', JSON.stringify(panier));
+        }
+    </script>
+</body>
+
+</html>

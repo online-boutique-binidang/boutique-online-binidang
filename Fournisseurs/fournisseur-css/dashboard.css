@@ -1,0 +1,162 @@
+   /* CSS styles */
+         *,
+        *::before,
+        *::after {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        a {
+            text-decoration: none;
+        }
+        li {
+            list-style: none;
+        }
+        img,
+        ion-icon,
+        a,
+        button,
+        time,
+        span {
+            display: block;
+        }
+        button {
+            font: inherit;
+            background: none;
+            border: none;
+            text-align: left;
+            cursor: pointer;
+        }
+        input,
+        textarea {
+            display: block;
+            width: 100%;
+            background: none;
+            font: inherit;
+        }
+        ::selection {
+            background: var(--orange-yellow-crayola);
+            color: var(--smoky-black);
+        }
+        :focus {
+            outline-color: var(--orange-yellow-crayola);
+        }
+        html {
+            font-family: var(--ff-poppins);
+        }
+        body {
+            background: var(--smoky-black);
+        }
+        body {
+            background-image: url('main.jpg');
+        }
+        .header {
+            background-color: rgba(0, 0, 0, 0.676);
+            position: fixed;
+            width: 100%;
+            height: 75px;
+            border-bottom: 2px solid rgba(255, 255, 255, 0.618);
+            box-shadow: 0 2px 5px rgb(0, 0, 0);
+        }
+        .header:active {
+            background-color: aqua;
+        }
+        .img {
+            position: absolute;
+            right: 0%;
+        }
+        a {
+            text-decoration: none;
+        }
+        .head {
+            display: inline-block;
+            font-family: 'Roboto', sans-serif;
+            font-weight: bold;
+            transition: font-size 0.3s ease;
+            color: rgb(255, 251, 251);
+            margin-top: -1%;
+        }
+        .head a {
+            color: yellow;
+        }
+        .head a:hover {
+            color: rgb(255, 153, 0);
+            font-size: 105%;
+            background-color: rgb(255, 255, 255);
+            font-weight: bold;
+            padding: 2px;
+            border-radius: 10px;
+            transition-duration: 5s ease;
+            transition: 0.25s ease-in;
+            transition: 0.5s ease-in-out;
+        }
+        .st img {
+            background-color: rgb(255, 255, 255);
+            width: 110px;
+            height: 110px;
+            background: var(--eerie-black-2);
+            box-shadow: 0 1px 5px;
+            align-items: center;
+            justify-content: center;
+            transition-duration: 5s ease;
+            transition: 0.25s ease-in;
+            transition: 0.5s ease-in-out;
+            z-index: 1;
+            border-radius: 10px;
+        }
+        .st img:hover {
+            transition: var(--transition-2);
+            cursor: pointer;
+            border-radius: 10px;
+            justify-content: flex-start;
+            width: 100px;
+            height: 100px;
+        }
+        .st {
+            display: inline-block;
+            margin-left: 5%;
+        }
+        .st a {
+            color: black;
+        }
+        .st a button {
+            color: rgb(255, 255, 255);
+            background-color: rgba(255, 0, 0, 0.801);
+            padding: 3px;
+            font-size: 12px;
+            font-weight: bolder;
+            text-shadow: 2px 0px 10px rgb(27, 26, 26);
+            border-radius: 10px;
+            margin-bottom:15px
+        }
+        .st a button:hover {
+            transition: 14s ease-in;
+        }
+        .contener {
+            background-color: rgba(0, 0, 0, 0.021);
+            margin-left: 3%;
+            margin-right: 3%;
+            border-radius: 25px;
+            border: 1px solid rgb(255, 255, 255);
+            padding: 1%;
+            gap: 25px;
+        }
+        .foot {
+            display: inline-block;
+            margin-left: 15px;
+            color: aliceblue;
+        }
+        footer {
+            background: rgba(0, 0, 0, 0.815);
+            padding-bottom: 5%;
+        }
+        #compteur-panier {
+            position: absolute;
+            font-size: 30px;
+        }
+        .div-header {
+        }
+        .style {
+            display: inline-block;
+        }
+       
